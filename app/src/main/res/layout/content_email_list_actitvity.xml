@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_email_list_actitvity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
     tools:context="vn.t3h.demoexam.EmailListActitvity"
-    tools:listitem="@layout/listview_item_layout"
     tools:showIn="@layout/app_bar_email_list_actitvity">
-
-</ListView>
+    <ListView android:id="@+id/content_email_list_actitvity" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

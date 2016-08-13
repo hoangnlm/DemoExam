@@ -3,6 +3,7 @@ package vn.t3h.demoexam.network;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import rx.Observable;
 import vn.t3h.demoexam.model.response.APIResponse;
@@ -20,9 +21,15 @@ public interface IAPIService {
     @GET("getAPIKey")
     Observable<APIResponse> getApiKey();
 
+    @Headers({
+            "Content-Type: application/json"
+    })
     @POST("login")
-    Observable<LoginResponse> login(@Header("Content-Type") String contentType, @Body User user);
+    Observable<LoginResponse> login(@Body User user);
 
+    @Headers({
+            "Content-Type: application/json"
+    })
     @POST("getEmails")
     Observable<EmailResponse> getEmails(@Body BaseRequest baseRequest);
 }

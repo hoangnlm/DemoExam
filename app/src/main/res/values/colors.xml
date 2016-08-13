@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
     <color name="loginBackgroundColor">#F1F5F8</color>
-    <color name="toolbarBackgroundColor">#F95939</color>
+    <color name="toolbarBackgroundColor">#f95939</color>
+    <color name="login_background_color">#ffffff</color>
 </resources>

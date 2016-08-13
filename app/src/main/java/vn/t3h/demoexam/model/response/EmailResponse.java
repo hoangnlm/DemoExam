@@ -15,7 +15,7 @@ import vn.t3h.demoexam.model.Email;
 public class EmailResponse extends BaseResponse {
     @SerializedName("emails")
     @Expose
-    private List<Email> emails = new ArrayList<Email>();
+    private List<Email> emails = new ArrayList<>();
 
     /**
      *

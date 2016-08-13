@@ -25,7 +25,7 @@ public class EmailListAdapter extends ArrayAdapter<Email> {
     private List<Email> emailList;
 
     public EmailListAdapter(Context context, List<Email> emailList) {
-        super(context, R.layout.listview_item_layout);
+        super(context, R.layout.listview_item_layout, emailList);
         this.context = context;
         this.emailList = emailList;
     }
